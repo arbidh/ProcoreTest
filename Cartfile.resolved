@@ -1,0 +1,5 @@
+github "Alamofire/Alamofire" "4.5.0"
+github "Swinject/Swinject" "2.1.0"
+github "johnsundell/unbox" "2.5.0"
+github "mxcl/PromiseKit" "4.3.0"
+github "serejahh/UnboxedAlamofire" "2.0.3"

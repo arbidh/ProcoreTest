@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.3.3\nBuild version 8E3004b",
+  "commitish" : "2.5.0",
+  "iOS" : [
+    {
+      "hash" : "a712ab2e41e69fc45437bb5a3f5f068500db4a61024b20a1f5cf526a6b02fcdb",
+      "name" : "Unbox"
+    }
+  ]
+}

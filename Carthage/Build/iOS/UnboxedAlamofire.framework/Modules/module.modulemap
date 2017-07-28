@@ -1,0 +1,10 @@
+framework module UnboxedAlamofire {
+  umbrella header "UnboxedAlamofire.h"
+
+  export *
+  module * { export * }
+}
+
+module UnboxedAlamofire.Swift {
+    header "UnboxedAlamofire-Swift.h"
+}

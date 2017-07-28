@@ -1,0 +1,26 @@
+//
+//  GitPullTableViewCell.swift
+//  ProcoreCodingTest
+//
+//  Created by Rinie Ghazali on 7/28/17.
+//  Copyright © 2017 arbiapps. All rights reserved.
+//
+
+import UIKit
+
+class GitPullTableViewCell: UITableViewCell {
+
+    @IBOutlet weak var pullReqTitleLabel: UILabel!
+    @IBOutlet weak var dateOpenedByOwnerLabel: UILabel!
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        // Initialization code
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
+    }
+
+}

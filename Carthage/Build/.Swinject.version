@@ -1,0 +1,10 @@
+{
+  "xcodeVersion" : "Xcode 8.3.3\nBuild version 8E3004b",
+  "commitish" : "2.1.0",
+  "iOS" : [
+    {
+      "hash" : "baf464f40cba046806c22c7fa066395b4ccc2f212af6b144b99a285b610d6749",
+      "name" : "Swinject"
+    }
+  ]
+}
