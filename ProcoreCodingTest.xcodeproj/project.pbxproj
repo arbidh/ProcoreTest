@@ -7,10 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C2669BC1F2D7F2B00C39AEB /* DiffRightTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C2669BA1F2D7F2B00C39AEB /* DiffRightTableViewCell.swift */; };
+		9C2669BD1F2D7F2B00C39AEB /* DiffRightTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C2669BB1F2D7F2B00C39AEB /* DiffRightTableViewCell.xib */; };
 		9C74AD7C1F2B490A00F44BBB /* DiffViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C74AD7B1F2B490A00F44BBB /* DiffViewController.swift */; };
 		9C74AD7E1F2B494E00F44BBB /* DiffTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9C74AD7D1F2B494E00F44BBB /* DiffTableViewCell.xib */; };
 		9C74AD801F2B4AE100F44BBB /* DiffTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C74AD7F1F2B4AE100F44BBB /* DiffTableViewCell.swift */; };
 		9C74AD821F2B500800F44BBB /* DiffViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C74AD811F2B500800F44BBB /* DiffViewModel.swift */; };
+		9CF50BF91F2EF5B2008C5A22 /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CF50BF51F2EF5B2008C5A22 /* Info-tvOS.plist */; };
+		9CF50BFA1F2EF5B2008C5A22 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9CF50BF61F2EF5B2008C5A22 /* Info.plist */; };
+		9CF50BFB1F2EF5B2008C5A22 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF50BF81F2EF5B2008C5A22 /* SwiftSpinner.swift */; };
 		9CF539B11F28E48D00304AFF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF539B01F28E48D00304AFF /* AppDelegate.swift */; };
 		9CF539B31F28E48D00304AFF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF539B21F28E48D00304AFF /* ViewController.swift */; };
 		9CF539B61F28E48D00304AFF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CF539B41F28E48D00304AFF /* Main.storyboard */; };
@@ -30,10 +35,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C2669BA1F2D7F2B00C39AEB /* DiffRightTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffRightTableViewCell.swift; sourceTree = "<group>"; };
+		9C2669BB1F2D7F2B00C39AEB /* DiffRightTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiffRightTableViewCell.xib; sourceTree = "<group>"; };
 		9C74AD7B1F2B490A00F44BBB /* DiffViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffViewController.swift; sourceTree = "<group>"; };
 		9C74AD7D1F2B494E00F44BBB /* DiffTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiffTableViewCell.xib; sourceTree = "<group>"; };
 		9C74AD7F1F2B4AE100F44BBB /* DiffTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffTableViewCell.swift; sourceTree = "<group>"; };
 		9C74AD811F2B500800F44BBB /* DiffViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiffViewModel.swift; sourceTree = "<group>"; };
+		9CF50BF51F2EF5B2008C5A22 /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		9CF50BF61F2EF5B2008C5A22 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9CF50BF71F2EF5B2008C5A22 /* SwiftSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SwiftSpinner.h; sourceTree = "<group>"; };
+		9CF50BF81F2EF5B2008C5A22 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		9CF539AD1F28E48D00304AFF /* ProcoreCodingTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProcoreCodingTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CF539B01F28E48D00304AFF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CF539B21F28E48D00304AFF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +81,74 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9CF50BF41F2EF5B2008C5A22 /* SwiftSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				9CF50BF51F2EF5B2008C5A22 /* Info-tvOS.plist */,
+				9CF50BF61F2EF5B2008C5A22 /* Info.plist */,
+				9CF50BF71F2EF5B2008C5A22 /* SwiftSpinner.h */,
+				9CF50BF81F2EF5B2008C5A22 /* SwiftSpinner.swift */,
+			);
+			path = SwiftSpinner;
+			sourceTree = "<group>";
+		};
+		9CF50BFC1F2F0AE6008C5A22 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				9C74AD811F2B500800F44BBB /* DiffViewModel.swift */,
+				9CF539C21F2A0B0200304AFF /* GitPullRequestViewModel.swift */,
+			);
+			name = ViewModels;
+			sourceTree = "<group>";
+		};
+		9CF50BFE1F2F0AFF008C5A22 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				9CF539B21F28E48D00304AFF /* ViewController.swift */,
+				9CF539C41F2A0B2B00304AFF /* GitPullRequestViewController.swift */,
+				9C74AD7B1F2B490A00F44BBB /* DiffViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		9CF50BFF1F2F0B0A008C5A22 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				9CF539B41F28E48D00304AFF /* Main.storyboard */,
+				9C2669BB1F2D7F2B00C39AEB /* DiffRightTableViewCell.xib */,
+				9C74AD7D1F2B494E00F44BBB /* DiffTableViewCell.xib */,
+				9CF539D81F2B2FFA00304AFF /* GitPullTableViewCell.xib */,
+				9CF539B91F28E48D00304AFF /* LaunchScreen.storyboard */,
+			);
+			name = Layout;
+			sourceTree = "<group>";
+		};
+		9CF50C001F2F0B39008C5A22 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9CF539D41F2A12D500304AFF /* GitPullModel.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		9CF50C011F2F0B5A008C5A22 /* DataService */ = {
+			isa = PBXGroup;
+			children = (
+				9CF539C81F2A0BE100304AFF /* GitPullDataService.swift */,
+			);
+			name = DataService;
+			sourceTree = "<group>";
+		};
+		9CF50C021F2F0B84008C5A22 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				9CF539DA1F2B303D00304AFF /* GitPullTableViewCell.swift */,
+				9C2669BA1F2D7F2B00C39AEB /* DiffRightTableViewCell.swift */,
+				9C74AD7F1F2B4AE100F44BBB /* DiffTableViewCell.swift */,
+			);
+			name = TableViewCells;
+			sourceTree = "<group>";
+		};
 		9CF539A41F28E48D00304AFF = {
 			isa = PBXGroup;
 			children = (
@@ -90,22 +169,16 @@
 		9CF539AF1F28E48D00304AFF /* ProcoreCodingTest */ = {
 			isa = PBXGroup;
 			children = (
+				9CF50C021F2F0B84008C5A22 /* TableViewCells */,
+				9CF50C011F2F0B5A008C5A22 /* DataService */,
+				9CF50C001F2F0B39008C5A22 /* Models */,
+				9CF50BFF1F2F0B0A008C5A22 /* Layout */,
+				9CF50BFE1F2F0AFF008C5A22 /* ViewControllers */,
+				9CF50BFC1F2F0AE6008C5A22 /* ViewModels */,
 				9CF539B01F28E48D00304AFF /* AppDelegate.swift */,
-				9CF539B21F28E48D00304AFF /* ViewController.swift */,
-				9CF539B41F28E48D00304AFF /* Main.storyboard */,
 				9CF539B71F28E48D00304AFF /* Assets.xcassets */,
-				9CF539B91F28E48D00304AFF /* LaunchScreen.storyboard */,
+				9CF50BF41F2EF5B2008C5A22 /* SwiftSpinner */,
 				9CF539BC1F28E48D00304AFF /* Info.plist */,
-				9CF539C21F2A0B0200304AFF /* GitPullRequestViewModel.swift */,
-				9CF539C41F2A0B2B00304AFF /* GitPullRequestViewController.swift */,
-				9CF539C81F2A0BE100304AFF /* GitPullDataService.swift */,
-				9CF539D41F2A12D500304AFF /* GitPullModel.swift */,
-				9CF539D81F2B2FFA00304AFF /* GitPullTableViewCell.xib */,
-				9CF539DA1F2B303D00304AFF /* GitPullTableViewCell.swift */,
-				9C74AD7B1F2B490A00F44BBB /* DiffViewController.swift */,
-				9C74AD7D1F2B494E00F44BBB /* DiffTableViewCell.xib */,
-				9C74AD7F1F2B4AE100F44BBB /* DiffTableViewCell.swift */,
-				9C74AD811F2B500800F44BBB /* DiffViewModel.swift */,
 			);
 			path = ProcoreCodingTest;
 			sourceTree = "<group>";
@@ -183,7 +256,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF50BFA1F2EF5B2008C5A22 /* Info.plist in Resources */,
 				9C74AD7E1F2B494E00F44BBB /* DiffTableViewCell.xib in Resources */,
+				9C2669BD1F2D7F2B00C39AEB /* DiffRightTableViewCell.xib in Resources */,
+				9CF50BF91F2EF5B2008C5A22 /* Info-tvOS.plist in Resources */,
 				9CF539BB1F28E48D00304AFF /* LaunchScreen.storyboard in Resources */,
 				9CF539D91F2B2FFA00304AFF /* GitPullTableViewCell.xib in Resources */,
 				9CF539B81F28E48D00304AFF /* Assets.xcassets in Resources */,
@@ -229,9 +305,11 @@
 				9CF539B11F28E48D00304AFF /* AppDelegate.swift in Sources */,
 				9CF539C51F2A0B2B00304AFF /* GitPullRequestViewController.swift in Sources */,
 				9C74AD7C1F2B490A00F44BBB /* DiffViewController.swift in Sources */,
+				9CF50BFB1F2EF5B2008C5A22 /* SwiftSpinner.swift in Sources */,
 				9C74AD821F2B500800F44BBB /* DiffViewModel.swift in Sources */,
 				9CF539D51F2A12D500304AFF /* GitPullModel.swift in Sources */,
 				9CF539C31F2A0B0200304AFF /* GitPullRequestViewModel.swift in Sources */,
+				9C2669BC1F2D7F2B00C39AEB /* DiffRightTableViewCell.swift in Sources */,
 				9CF539C91F2A0BE100304AFF /* GitPullDataService.swift in Sources */,
 				9CF539DB1F2B303D00304AFF /* GitPullTableViewCell.swift in Sources */,
 			);

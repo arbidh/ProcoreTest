@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ProcoreCodingTest
 //
-//  Created by Rinie Ghazali on 7/26/17.
+//  Created by Arbi Derhartunian on 7/26/17.
 //  Copyright © 2017 arbiapps. All rights reserved.
 //
 

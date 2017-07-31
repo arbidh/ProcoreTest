@@ -2,7 +2,7 @@
 //  GitPullDataService.swift
 //  ProcoreCodingTest
 //
-//  Created by Rinie Ghazali on 7/27/17.
+//  Created by Arbi Derhartunian on 7/27/17.
 //  Copyright © 2017 arbiapps. All rights reserved.
 //
 
@@ -26,13 +26,15 @@ public struct URLString{
     
 }
 
-
+/**
+ Responsible to get the pull request data and populate it to GItPullModel array
+ */
 
 class GitPullDataService{
     
     func fetchPullDataFromGitHubWithURL(success:@escaping ((_ imageData:[GitPullModel])->Void) , fail:@escaping ((_ error:Error, _ errorType:ResponsErrorType)->Void)){
     
-        
+
         Alamofire.request(URLString.pullURL).responseArray { (resp:DataResponse<[GitPullModel]>) in
       
             if let data:[GitPullModel] = resp.result.value{
@@ -49,9 +51,15 @@ class GitPullDataService{
     }
     
     
-    func fetchDiffDataFromGitHubWithURL(fileNumber:Int,   success:@escaping ((_ diffData:[Diff])->Void) , fail:@escaping ((_ error:Error, _ errorType:ResponsErrorType)->Void)){
+    func fetchDiffDataFromGitHubWithURL(fileNumber:Int,   success:@escaping ((_ diffData:[Diff])->Void) , fail:@escaping ((_ error:Error? , _ errorType:ResponsErrorType)->Void)){
+       
+        if fileNumber == 0{
+               fail(nil, .otherErrorType)
+        }
         
-        let diffURL = URLString.pullURL + "/\(fileNumber)/files"
+       let diffURL = URLString.pullURL + "/\(fileNumber)/files"
+        
+     
         
         Alamofire.request(diffURL).responseArray { (resp:DataResponse<[Diff]>) in
             

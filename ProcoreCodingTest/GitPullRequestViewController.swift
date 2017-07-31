@@ -2,7 +2,7 @@
 //  GitPullRequestViewController.swift
 //  ProcoreCodingTest
 //
-//  Created by Rinie Ghazali on 7/27/17.
+//  Created by Arbi Derhartunian on 7/27/17.
 //  Copyright © 2017 arbiapps. All rights reserved.
 //
 
@@ -14,6 +14,8 @@ class GitPullRequestViewController: UIViewController {
     var gitPullRequestViewModel:GitPullRequestViewModel = GitPullRequestViewModel()
     
     @IBOutlet weak var tableView: UITableView!
+    var indexOfSelected:Int = 0
+    var fileNumber = 0
     
     
     var didReceiveData:Bool?{
@@ -35,13 +37,19 @@ class GitPullRequestViewController: UIViewController {
         tableView.register(nib, forCellReuseIdentifier: reuseID)
     }
     
+    @IBAction func startDiff(_ sender: UIBarButtonItem) {
+       self.dismiss(animated: true, completion: nil)
+        
+    }
     
     func getPullDataFromGit(){
+         SwiftSpinner.show("LOADING")
         
         gitPullRequestViewModel.makeRequestForPulls(success: { gitData in
             if (gitData.count > 1){
                 self.gitPullRequestViewModel.gitData = gitData
                 self.didReceiveData = true
+                SwiftSpinner.hide()
             }
             else
             {
@@ -51,11 +59,17 @@ class GitPullRequestViewController: UIViewController {
         }) { (error, type) in
             
             if type == ResponsErrorType.apiErrorType{
-                print(error)
+                SwiftSpinner.show(error as! String).addTapHandler({
+                    SwiftSpinner.hide()
+                })
+                
             }
             else
             {
-               print("something went wrong")
+                SwiftSpinner.show("Something went wrong").addTapHandler({
+                    SwiftSpinner.hide()
+                })
+
             }
         }
     }
@@ -103,53 +117,20 @@ extension GitPullRequestViewController:UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: false)
-        
-       if  let number = gitPullRequestViewModel.gitData[indexPath.row].number
-        {
-          fetchDiffs(number:number )
+        indexOfSelected = indexPath.row
+        if let fileNumber =  gitPullRequestViewModel.gitData[indexOfSelected].number{
+            self.fileNumber = fileNumber
         }
+        self.performSegue(withIdentifier: "segueDiff", sender: self)
         
     }
     
-    func fetchDiffs(number:Int){
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let diffViewController = segue.destination as? DiffViewController
         
-        var viewModelDiff = DiffViewModel()
+        diffViewController?.fileNumber = self.fileNumber
         
-
-        
-        
-        viewModelDiff.makeRequestForDiffs(fileNumber: number, success: { gitdiffData in
-            
-            print(gitdiffData[0].patch ?? "bad")
-            
-            if (gitdiffData.count > 0)
-            {
-                viewModelDiff.gitDiffData = gitdiffData
-                var tview:DiffViewController = self.storyboard?.instantiateViewController(withIdentifier: "DiffViewController") as! DiffViewController
-                
-                
-                self.view.addSubview((tview.view)!)
-                tview.view.frame.origin.x = 0
-                UIView.animate(withDuration: 0.5, animations: {
-                    
-                    tview.view.frame.origin.x = 300
-                    
-                }) { valid in
-                    
-                }
-            }
-            
-        }) { (error, type) in
-            
-            if type == ResponsErrorType.apiErrorType{
-                print(error)
-            }
-            else
-            {
-                print("something went wrong")
-            }
-            
-        }
+        diffViewController?.viewModelDiff.gitDiffProtocol = diffViewController
     }
     
     

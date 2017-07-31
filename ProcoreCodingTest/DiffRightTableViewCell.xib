@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="diffReuseIDRight" rowHeight="334" id="q9I-fR-3ao" customClass="DiffRightTableViewCell" customModule="ProcoreCodingTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="510" height="334"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="q9I-fR-3ao" id="Yyp-pN-ns5">
+                <rect key="frame" x="0.0" y="0.0" width="510" height="333.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDu-XI-C4V">
+                        <rect key="frame" x="28" y="0.0" width="482" height="334"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HO6-WE-b4m">
+                        <rect key="frame" x="0.0" y="0.0" width="20" height="334"/>
+                        <color key="backgroundColor" red="0.66097571109999997" green="0.86582424499999999" blue="0.88162526590000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="2yf-6m-ejW"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="HO6-WE-b4m" firstAttribute="top" secondItem="Yyp-pN-ns5" secondAttribute="top" id="8i3-av-8H8"/>
+                    <constraint firstAttribute="bottom" secondItem="HO6-WE-b4m" secondAttribute="bottom" constant="-0.5" id="BQc-f7-vbe"/>
+                    <constraint firstItem="NDu-XI-C4V" firstAttribute="top" secondItem="Yyp-pN-ns5" secondAttribute="top" id="BwT-IL-3kH"/>
+                    <constraint firstItem="HO6-WE-b4m" firstAttribute="leading" secondItem="Yyp-pN-ns5" secondAttribute="leading" id="Mm2-uA-xHs"/>
+                    <constraint firstAttribute="trailing" secondItem="NDu-XI-C4V" secondAttribute="trailing" id="Po8-A1-HSB"/>
+                    <constraint firstAttribute="bottom" secondItem="NDu-XI-C4V" secondAttribute="bottom" constant="-0.5" id="hsU-lI-6K5"/>
+                    <constraint firstItem="NDu-XI-C4V" firstAttribute="leading" secondItem="Yyp-pN-ns5" secondAttribute="leading" constant="28" id="sGo-EY-6wk"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="label" destination="NDu-XI-C4V" id="rPM-vS-wdK"/>
+                <outlet property="lineNumberView" destination="HO6-WE-b4m" id="Ib6-dw-eVM"/>
+            </connections>
+            <point key="canvasLocation" x="-35" y="-1534"/>
+        </tableViewCell>
+    </objects>
+</document>

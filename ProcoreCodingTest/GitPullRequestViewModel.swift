@@ -2,7 +2,7 @@
 //  GitPullRequestViewModel.swift
 //  ProcoreCodingTest
 //
-//  Created by Rinie Ghazali on 7/27/17.
+//  Created by Arbi Derhartunian on 7/27/17.
 //  Copyright © 2017 arbiapps. All rights reserved.
 //
 
@@ -15,7 +15,7 @@ struct GitPullRequestViewModel{
     
     var gitData:[GitPullModel] = []
   
-
+     
     
     mutating func makeRequestForPulls(success:@escaping ((_ gitData:[GitPullModel])->Void), fail:@escaping (_ error:Error,_ errorType:ResponsErrorType)->Void){
         
